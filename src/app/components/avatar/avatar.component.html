@@ -1,0 +1,8 @@
+<div class="avatar"
+     mwlDraggable
+     (dragEnd)="dragEnd($event)"
+     *ngIf="user && avatarPosition"
+     [ngStyle]="{'top.px':avatarPosition['top'],'left.px': avatarPosition['left']}">
+    <img [src]="user['photo']" [alt]="user['name']">
+    {{user['name']}}
+</div>

@@ -1,0 +1,44 @@
+@import "../../scss/main";
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    box-shadow: 0 0 20px rgba($color_1, .3);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: $color_1;
+    color: $color_5;
+  }
+
+  &__body {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: $color_1;
+  }
+
+  &__avatar {
+    position: fixed;
+    z-index: 3;
+  }
+}

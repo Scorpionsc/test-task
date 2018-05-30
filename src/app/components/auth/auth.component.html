@@ -1,0 +1,26 @@
+<div class="auth">
+
+    <form class="auth__form" [formGroup]="fg" (submit)="onSubmit()">
+
+        <h2 class="auth__form-title">Login</h2>
+
+        <fieldset>
+            <mat-form-field>
+                <input matInput placeholder="Name" type="text" formControlName="name">
+            </mat-form-field>
+        </fieldset>
+
+        <fieldset>
+            <mat-form-field>
+                <input matInput placeholder="Password" type="password" formControlName="password">
+            </mat-form-field>
+        </fieldset>
+
+        <fieldset>
+            <button mat-raised-button>Log In</button>
+        </fieldset>
+
+
+    </form>
+
+</div>

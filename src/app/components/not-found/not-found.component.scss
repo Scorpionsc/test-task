@@ -1,0 +1,43 @@
+@import "../../scss/main";
+
+.not-found {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrap {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $color_2;
+
+    > span {
+      display: block;
+      font-size: 5em;
+    }
+
+    > div {
+      margin-bottom: 30px;
+    }
+
+    > a,
+    > a:visited {
+      color: $color_1;
+      font-size: .8em;
+      text-transform: none;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,29 @@
+<div class="main">
+
+  <div class="main__header">
+
+    <h1 class="main__header-title">The Best App</h1>
+
+    <div class="main__header-menu">
+
+      <button mat-raised-button [matMenuTriggerFor]="menu">
+        <mat-icon aria-label="Menu">more_vert</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
+
+    </div>
+
+  </div>
+
+  <div class="main__body">
+
+    <h2>Welcome!!!</h2>
+
+  </div>
+
+  <app-avatar class="main__avatar"></app-avatar>
+
+</div>
